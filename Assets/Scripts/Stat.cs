@@ -28,7 +28,6 @@ public class Stat : MonoBehaviour {
 				_currentValue = 0;
 			else
 				_currentValue = value;
-            Debug.Log("jb");
 			_currentFill = CurrentValue / MaxValue;
 		}
 	}
@@ -48,7 +47,6 @@ public class Stat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-        Debug.Log(_currentFill);
 		_content.fillAmount = _currentFill;
 	}
 }
